@@ -1,0 +1,190 @@
+/* ==== Gaya Dasar untuk Seluruh Halaman ==== */
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* ==== Gaya untuk Header ==== */
+header {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 5px solid #e74c3c;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #bdc3c7;
+}
+
+/* ==== Gaya untuk Konten Utama ==== */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #34495e;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #bdc3c7;
+    margin-bottom: 40px;
+}
+
+/* ==== CAROUSEL KUTIPAN PRESIDEN ==== */
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.slides {
+    display: flex;
+    width: 600%; /* 100% x jumlah slide */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 16.666%; /* 100% / jumlah slide */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.slide img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #34495e;
+    margin-bottom: 20px;
+}
+
+.slide blockquote {
+    margin: 0;
+}
+
+.slide blockquote p {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #2c3e50;
+    margin: 0 0 15px 0;
+}
+
+.slide blockquote cite {
+    font-style: normal;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Sembunyikan radio button asli */
+.carousel-container input[type="radio"] {
+    display: none;
+}
+
+/* Navigasi titik-titik di bawah */
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.navigation label {
+    border: 2px solid #34495e;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.navigation label:hover {
+    background: #bdc3c7;
+}
+
+/* Logika perpindahan slide dengan CSS */
+#slide1:checked ~ .slides { transform: translateX(0%); }
+#slide2:checked ~ .slides { transform: translateX(-16.666%); }
+#slide3:checked ~ .slides { transform: translateX(-33.332%); }
+#slide4:checked ~ .slides { transform: translateX(-49.998%); }
+#slide5:checked ~ .slides { transform: translateX(-66.664%); }
+#slide6:checked ~ .slides { transform: translateX(-83.330%); }
+
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"],
+#slide4:checked ~ .navigation label[for="slide4"],
+#slide5:checked ~ .navigation label[for="slide5"],
+#slide6:checked ~ .navigation label[for="slide6"] {
+    background: #34495e;
+}
+
+/* ==== KUTIPAN TOKOH LAINNYA ==== */
+.kartu-kutipan {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.kartu-kutipan figure {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.kartu-kutipan img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.kartu-kutipan figcaption {
+    padding: 20px;
+}
+
+/* ==== Gaya untuk Footer ==== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #34495e;
+    color: #bdc3c7;
+    font-size: 0.9em;
+}
+
+/* ==== Desain Responsif ==== */
+@media (max-width: 600px) {
+    .kartu-kutipan figure {
+        flex-direction: column;
+        text-align: center;
+    }
+}

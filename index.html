@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutipan Inspiratif Tokoh Indonesia</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Menambahkan Google Fonts untuk tampilan yang lebih elegan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Bagian Header untuk Judul Utama -->
+    <header>
+        <h1>Kutipan Inspiratif Tokoh Indonesia</h1>
+        <p>Kata-kata bijak dari para pahlawan dan pemikir bangsa.</p>
+    </header>
+
+    <!-- Bagian Konten Utama -->
+    <main>
+        <!-- Bagian Carousel untuk Kutipan Presiden -->
+        <section id="kutipan-presiden">
+            <h2>Pesan dari Para Pemimpin Bangsa</h2>
+            <div class="carousel-container">
+                <!-- Radio buttons untuk mengontrol slide (ini adalah triknya) -->
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
+                <input type="radio" name="slider" id="slide6">
+
+                <div class="slides">
+                    <!-- Slide 1: Jokowi -->
+                    <div class="slide" id="s1">
+                        <img src="images/jokowi.jpg" alt="Foto Joko Widodo">
+                        <blockquote>
+                            <p>"Kerja, kerja, kerja. Hasilnya akan kita nikmati bersama."</p>
+                            <cite>– Joko Widodo</cite>
+                        </blockquote>
+                    </div>
+                    <!-- Slide 2: SBY -->
+                    <div class="slide" id="s2">
+                        <img src="images/sby.jpg" alt="Foto Susilo Bambang Yudhoyono">
+                        <blockquote>
+                            <p>"Solusi terbaik adalah solusi yang dapat diterima oleh semua pihak, bukan kemenangan sepihak."</p>
+                            <cite>– Susilo Bambang Yudhoyono</cite>
+                        </blockquote>
+                    </div>
+                    <!-- Slide 3: Megawati -->
+                    <div class="slide" id="s3">
+                        <img src="images/megawati.jpg" alt="Foto Megawati Soekarnoputri">
+                        <blockquote>
+                            <p>"Seorang pemimpin sejati adalah pemimpin yang mampu melihat jauh ke depan, melampaui kepentingan sesaat."</p>
+                            <cite>– Megawati Soekarnoputri</cite>
+                        </blockquote>
+                    </div>
+                    <!-- Slide 4: Gus Dur -->
+                    <div class="slide" id="s4">
+                        <img src="images/gusdur.jpg" alt="Foto Abdurrahman Wahid">
+                        <blockquote>
+                            <p>"Tuhan tidak perlu dibela, Dia sudah Maha Segalanya. Belalah mereka yang diperlakukan tidak adil."</p>
+                            <cite>– Abdurrahman Wahid</cite>
+                        </blockquote>
+                    </div>
+                    <!-- Slide 5: Habibie -->
+                    <div class="slide" id="s5">
+                        <img src="images/habibie.jpg" alt="Foto B.J. Habibie">
+                        <blockquote>
+                            <p>"Tanpa cinta, kecerdasan itu berbahaya. Dan tanpa kecerdasan, cinta itu tidak cukup."</p>
+                            <cite>– B.J. Habibie</cite>
+                        </blockquote>
+                    </div>
+                    <!-- Slide 6: Soekarno -->
+                    <div class="slide" id="s6">
+                        <img src="images/soekarno.jpg" alt="Foto Soekarno">
+                        <blockquote>
+                            <p>"Perjuanganku lebih mudah karena mengusir penjajah, tapi perjuanganmu akan lebih sulit karena melawan bangsamu sendiri."</p>
+                            <cite>– Soekarno</cite>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label for="slide6"></label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian untuk kutipan lainnya -->
+        <section id="kumpulan-kutipan">
+            <h2>Kutipan Tokoh Lainnya</h2>
+            <!-- Di sini kita letakkan kutipan dari tokoh non-presiden -->
+            <article class="kartu-kutipan">
+                <figure>
+                    <img src="images/kartini.jpg" alt="Foto R.A. Kartini">
+                    <figcaption>
+                        <blockquote>
+                            <p>"Teruslah bermimpi, teruslah bermimpi, bermimpilah selama engkau dapat bermimpi!"</p>
+                            <cite>– R.A. Kartini</cite>
+                        </blockquote>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="kartu-kutipan">
+                <figure>
+                    <img src="images/hatta.jpg" alt="Foto Mohammad Hatta">
+                    <figcaption>
+                        <blockquote>
+                            <p>"Kurang cerdas dapat diperbaiki dengan belajar, kurang cakap dapat dihilangkan dengan pengalaman. Namun tidak jujur itu sulit diperbaiki."</p>
+                            <cite>– Mohammad Hatta</cite>
+                        </blockquote>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <!-- Bagian Footer untuk Copyright -->
+    <footer>
+        <p>&copy; 2025 - Dibuat oleh [Ganti dengan Nama Anda]</p>
+    </footer>
+</body>
+</html>
