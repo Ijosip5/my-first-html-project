@@ -4,17 +4,19 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
-    color: #333;
+    /* Menambahkan gambar latar belakang */
+    background-image: url('https://www.transparenttextures.com/patterns/clean-gray-paper.png');
+    background-color: #fefefe; /* Warna dasar jika gambar gagal dimuat */
+    color: #2d2d2d; /* Warna teks utama yang lebih gelap */
 }
 
 /* ==== Gaya untuk Header ==== */
 header {
-    background-color: #34495e;
-    color: #ecf0f1;
+    background-color: #c2410c; /* Warna Merah-Oranye Tua */
+    color: #ffffff;
     text-align: center;
     padding: 60px 20px;
-    border-bottom: 5px solid #e74c3c;
+    border-bottom: 5px solid #f59e0b; /* Aksen warna Kuning/Emas */
 }
 
 header h1 {
@@ -22,12 +24,13 @@ header h1 {
     margin: 0;
     font-size: 3em;
     font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Bayangan pada teks judul */
 }
 
 header p {
     margin-top: 10px;
     font-size: 1.1em;
-    color: #bdc3c7;
+    color: #f1f1f1;
 }
 
 /* ==== Gaya untuk Konten Utama ==== */
@@ -40,9 +43,9 @@ main {
 main h2 {
     text-align: center;
     font-family: 'Merriweather', serif;
-    color: #34495e;
+    color: #b91c1c; /* Warna Merah untuk subjudul */
     padding-bottom: 20px;
-    border-bottom: 2px solid #bdc3c7;
+    border-bottom: 2px solid #f59e0b; /* Garis bawah Kuning/Emas */
     margin-bottom: 40px;
 }
 
@@ -54,9 +57,10 @@ main h2 {
     position: relative;
     background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     padding: 30px;
     box-sizing: border-box;
+    border: 1px solid #ddd;
 }
 
 .slides {
@@ -79,26 +83,22 @@ main h2 {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #34495e;
+    border: 5px solid #c2410c; /* Border Merah-Oranye */
     margin-bottom: 20px;
-}
-
-.slide blockquote {
-    margin: 0;
 }
 
 .slide blockquote p {
     font-family: 'Merriweather', serif;
     font-size: 1.5em;
     font-style: italic;
-    color: #2c3e50;
+    color: #2d2d2d;
     margin: 0 0 15px 0;
 }
 
 .slide blockquote cite {
     font-style: normal;
     font-weight: bold;
-    color: #34495e;
+    color: #c2410c;
 }
 
 /* Sembunyikan radio button asli */
@@ -116,7 +116,7 @@ main h2 {
 }
 
 .navigation label {
-    border: 2px solid #34495e;
+    border: 2px solid #c2410c;
     padding: 5px;
     border-radius: 50%;
     cursor: pointer;
@@ -125,7 +125,7 @@ main h2 {
 }
 
 .navigation label:hover {
-    background: #bdc3c7;
+    background: #f59e0b;
 }
 
 /* Logika perpindahan slide dengan CSS */
@@ -142,7 +142,7 @@ main h2 {
 #slide4:checked ~ .navigation label[for="slide4"],
 #slide5:checked ~ .navigation label[for="slide5"],
 #slide6:checked ~ .navigation label[for="slide6"] {
-    background: #34495e;
+    background: #c2410c;
 }
 
 /* ==== KUTIPAN TOKOH LAINNYA ==== */
@@ -152,6 +152,7 @@ main h2 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     margin-bottom: 40px;
     overflow: hidden;
+    border-left: 10px solid #f59e0b; /* Garis aksen Kuning/Emas */
 }
 
 .kartu-kutipan figure {
@@ -176,8 +177,8 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    background-color: #34495e;
-    color: #bdc3c7;
+    background-color: #2d2d2d; /* Footer lebih gelap */
+    color: #f1f1f1;
     font-size: 0.9em;
 }
 
